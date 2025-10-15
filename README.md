@@ -9,7 +9,7 @@
 
 ## Demo Video
 
-[🎬 Watch Demo Video](https://github.com/MadhurToshniwal/Smart-Task-Planner/blob/main/video1196514283.mp4)
+[🎬 Watch Demo Video](https://github.com/MadhurToshniwal/Smart-Task-Planner/main/video1196514283.mp4)
 
 
 ## 🎯 **Project Overview**
