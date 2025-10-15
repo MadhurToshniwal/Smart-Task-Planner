@@ -7,6 +7,11 @@
 
 > **Transform ambitious goals into actionable, time-bound tasks with the power of AI reasoning**
 
+## Demo Video
+
+[🎬 Watch Demo Video](https://github.com/MadhurToshniwal/Smart-Task-Planner/blob/main/video1196514283.mp4)
+
+
 ## 🎯 **Project Overview**
 
 ## Frontend:
