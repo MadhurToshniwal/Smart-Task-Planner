@@ -6,9 +6,9 @@
   "scripts": {
     "start": "node backend/server.js",
     "dev": "concurrently \"cd backend && npm start\" \"cd frontend && npm start\"",
-    "build": "cd frontend && npm run build && cd .. && cp -r frontend/build backend/public",
-    "install-all": "npm install && cd backend && npm install && cd ../frontend && npm install",
-    "railway-build": "cd backend && npm install && cd ../frontend && npm install && npm run build",
+    "build": "npm run install-deps && cd frontend && npm run build && mkdir -p ../backend/public && cp -r build/* ../backend/public/",
+    "install-deps": "cd backend && npm install && cd ../frontend && npm install",
+    "railway-deploy": "npm run build && npm start",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
