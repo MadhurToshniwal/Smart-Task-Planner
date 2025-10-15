@@ -10,10 +10,21 @@
 
 ## 🎯 **Project Overview**
 
-Frontend: <img width="1806" height="903" alt="image" src="https://github.com/user-attachments/assets/1ab8aa1b-d299-41fc-ba88-1091f2efab65" />
+## Frontend:
+<img width="1806" height="903" alt="image" src="https://github.com/user-attachments/assets/1ab8aa1b-d299-41fc-ba88-1091f2efab65" />
 <img width="1634" height="448" alt="image" src="https://github.com/user-attachments/assets/c225803e-4911-4b5b-a757-6a8c325c0997" />
 <img width="1306" height="793" alt="image" src="https://github.com/user-attachments/assets/78ac21a9-54c1-4727-ab61-64c89c352d99" />
 <img width="1308" height="797" alt="image" src="https://github.com/user-attachments/assets/875a737d-4736-4eb3-9b2f-4388d3fbced3" />
+
+## API docs: 
+<img width="1859" height="901" alt="image" src="https://github.com/user-attachments/assets/6ad7a6da-4e3f-493f-9e46-9b6708b7de7f" />
+<img width="1857" height="609" alt="image" src="https://github.com/user-attachments/assets/90fab56a-bddd-4b64-be29-c8ac41619520" />
+
+## API Test:
+<img width="1747" height="891" alt="image" src="https://github.com/user-attachments/assets/5c587a18-3412-4a1a-9b08-dcbe9c99056c" />
+
+## Backend:
+<img width="1316" height="216" alt="image" src="https://github.com/user-attachments/assets/8c712dcb-c225-4de7-bff6-9193272faecf" />
 
 
 
