@@ -10,6 +10,14 @@
 
 ## 🎯 **Project Overview**
 
+Frontend: <img width="1806" height="903" alt="image" src="https://github.com/user-attachments/assets/1ab8aa1b-d299-41fc-ba88-1091f2efab65" />
+<img width="1634" height="448" alt="image" src="https://github.com/user-attachments/assets/c225803e-4911-4b5b-a757-6a8c325c0997" />
+<img width="1306" height="793" alt="image" src="https://github.com/user-attachments/assets/78ac21a9-54c1-4727-ab61-64c89c352d99" />
+<img width="1308" height="797" alt="image" src="https://github.com/user-attachments/assets/875a737d-4736-4eb3-9b2f-4388d3fbced3" />
+
+
+
+
 Smart Task Planner is an intelligent goal decomposition system that leverages advanced AI to break down complex objectives into manageable, prioritized tasks with realistic timelines. Built for **Unthinkable Solutions**, this project demonstrates cutting-edge integration of AI reasoning, modern web technologies, and professional software architecture.
 
 ### 🏆 **Why This Project Stands Out**
