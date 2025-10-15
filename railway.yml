@@ -1,4 +1,0 @@
-build:
-  - cd frontend && npm install && npm run build
-  - mkdir -p backend/public && cp -r frontend/build/* backend/public/
-web: cd backend && node server.js
