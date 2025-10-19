@@ -3,10 +3,6 @@ services:
     source:
       repo: MadhurToshniwal/Smart-Task-Planner
       rootDirectory: /
-    build:
-      command: cd backend && npm install && cd ../frontend && npm install && npm run build && mkdir -p ../backend/public && cp -r build/* ../backend/public/
-    start:
-      command: cd backend && node server.js
     variables:
       NODE_ENV: production
       PORT: ${{ PORT }}
