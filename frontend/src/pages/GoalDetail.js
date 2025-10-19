@@ -4,6 +4,7 @@ import axios from 'axios';
 import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend } from 'chart.js';
 import { Bar } from 'react-chartjs-2';
 import { toast, ToastContainer } from 'react-toastify';
+import API_BASE_URL from '../config/api';
 import { 
   ArrowLeft, 
   CheckCircle, 
@@ -40,7 +41,7 @@ const GoalDetail = () => {
   const fetchGoalWithTasks = async () => {
     try {
       setLoading(true);
-      const response = await axios.get(`http://localhost:5000/api/tasks/goals/${id}`);
+      const response = await axios.get(`${API_BASE_URL}/api/tasks/goals/${id}`);
       setGoal(response.data.goal);
       setTasks(response.data.tasks);
       setLoading(false);
@@ -53,7 +54,7 @@ const GoalDetail = () => {
 
   const updateTaskStatus = async (taskId, newStatus) => {
     try {
-      await axios.patch(`http://localhost:5000/api/tasks/${taskId}/status`, { status: newStatus });
+      await axios.patch(`${API_BASE_URL}/api/tasks/${taskId}/status`, { status: newStatus });
       
       // Update the task status in the local state
       setTasks(tasks.map(task => 
@@ -74,7 +75,7 @@ const GoalDetail = () => {
     if (!window.confirm('Are you sure you want to delete this task?')) return;
     
     try {
-      await axios.delete(`http://localhost:5000/api/tasks/${taskId}`);
+      await axios.delete(`${API_BASE_URL}/api/tasks/${taskId}`);
       setTasks(tasks.filter(task => task._id !== taskId));
       toast.success('Task deleted successfully');
     } catch (error) {

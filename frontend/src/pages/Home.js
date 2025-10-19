@@ -5,6 +5,7 @@ import DatePicker from 'react-datepicker';
 import "react-datepicker/dist/react-datepicker.css";
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import API_BASE_URL from '../config/api';
 import { 
   Target, 
   Plus, 
@@ -46,7 +47,7 @@ const Home = () => {
   const fetchGoals = async () => {
     try {
       setLoading(true);
-      const response = await axios.get('http://localhost:5000/api/tasks/goals');
+      const response = await axios.get(`${API_BASE_URL}/api/tasks/goals`);
       setGoals(response.data.data || response.data);
       setLoading(false);
     } catch (error) {
@@ -58,7 +59,7 @@ const Home = () => {
 
   const fetchAnalytics = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/api/tasks/dashboard/analytics');
+      const response = await axios.get(`${API_BASE_URL}/api/tasks/dashboard/analytics`);
       setAnalytics(response.data.data);
     } catch (error) {
       console.error('Error fetching analytics:', error);
@@ -98,7 +99,7 @@ const Home = () => {
       setSubmitting(true);
       setError('');
       
-      const response = await axios.post('http://localhost:5000/api/tasks/generate', {
+      const response = await axios.post(`${API_BASE_URL}/api/tasks/generate`, {
         goalText,
         deadline: deadline ? deadline.toISOString() : null,
         category,
@@ -132,7 +133,7 @@ const Home = () => {
     }
 
     try {
-      await axios.delete(`http://localhost:5000/api/tasks/goals/${goalId}`);
+      await axios.delete(`${API_BASE_URL}/api/tasks/goals/${goalId}`);
       setGoals(goals.filter(goal => goal._id !== goalId));
       toast.success('Goal deleted successfully');
       fetchAnalytics(); // Refresh analytics

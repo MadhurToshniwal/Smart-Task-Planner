@@ -1,0 +1,23 @@
+services:
+  backend:
+    source:
+      repo: MadhurToshniwal/Smart-Task-Planner
+      rootDirectory: /
+    build:
+      command: cd backend && npm install && cd ../frontend && npm install && npm run build && mkdir -p ../backend/public && cp -r build/* ../backend/public/
+    start:
+      command: cd backend && node server.js
+    variables:
+      NODE_ENV: production
+      PORT: ${{ PORT }}
+      MONGO_URI: ${{ MONGO_PRIVATE_URL }}
+      GROQ_API_KEY: ${{ GROQ_API_KEY }}
+      OPENAI_API_KEY: dummy_key_not_used
+      GEMINI_API_KEY: dummy_key_not_used
+    
+  database:
+    image: mongo:latest
+    variables:
+      MONGO_INITDB_ROOT_USERNAME: admin
+      MONGO_INITDB_ROOT_PASSWORD: ${{ MONGO_PASSWORD }}
+      MONGO_INITDB_DATABASE: smart-task-planner
