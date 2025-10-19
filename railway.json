@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "build": {
+    "commands": [
+      {
+        "name": "Install Backend Dependencies",
+        "command": "cd backend && npm install"
+      },
+      {
+        "name": "Install Frontend Dependencies", 
+        "command": "cd frontend && npm install"
+      },
+      {
+        "name": "Build Frontend",
+        "command": "cd frontend && npm run build"
+      },
+      {
+        "name": "Copy Frontend Build",
+        "command": "mkdir -p backend/public && cp -r frontend/build/* backend/public/"
+      }
+    ]
+  },
+  "deploy": {
+    "startCommand": "cd backend && node server.js"
+  }
+}

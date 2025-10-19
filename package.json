@@ -4,9 +4,9 @@
   "description": "AI-driven task planning application",
   "main": "index.js",
   "scripts": {
-    "start": "node backend/server.js",
+    "start": "cd backend && node server.js",
     "dev": "concurrently \"cd backend && npm start\" \"cd frontend && npm start\"",
-    "build": "npm run install-all && npm run build-frontend && node copy-frontend.js",
+    "build": "cd backend && npm install && cd ../frontend && npm install && npm run build && cd .. && node copy-frontend.js",
     "install-all": "cd backend && npm install && cd ../frontend && npm install",
     "build-frontend": "cd frontend && npm run build",
     "heroku-postbuild": "npm run build",
@@ -21,8 +21,5 @@
   "license": "ISC",
   "dependencies": {
     "concurrently": "^8.0.1"
-  },
-  "devDependencies": {
-    "react-scripts": "5.0.1"
   }
 }

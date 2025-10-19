@@ -1,15 +1,13 @@
-[phases.setup]
-nixPkgs = ["nodejs_20", "npm"]
+[variables]
+NODE_ENV = "production"
 
 [phases.install]
-dependsOn = ["setup"]
 cmds = [
   "cd backend && npm install",
-  "cd frontend && npm ci --include=dev"
+  "cd frontend && npm install"
 ]
 
-[phases.build]
-dependsOn = ["install"]
+[phases.build] 
 cmds = [
   "cd frontend && npm run build",
   "mkdir -p backend/public",
