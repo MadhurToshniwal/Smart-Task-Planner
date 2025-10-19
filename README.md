@@ -1,13 +1,14 @@
 # 🚀 Smart Task Planner - AI-Powered Goal Breakdown System
 
-## Live Demo ##: https://smart-task-planner-qntw.onrender.com/
+
 [![Node.js](https://img.shields.io/badge/Node.js-18+-green.svg)](https://nodejs.org/)
 [![React](https://img.shields.io/badge/React-18+-blue.svg)](https://reactjs.org/)
 [![MongoDB](https://img.shields.io/badge/MongoDB-Ready-brightgreen.svg)](https://mongodb.com/)
 [![AI Powered](https://img.shields.io/badge/AI-Groq%20Llama%203.1-orange.svg)](https://groq.com/)
 
 > **Transform ambitious goals into actionable, time-bound tasks with the power of AI reasoning**
-
+### Live Demo
+https://smart-task-planner-qntw.onrender.com/
 ## Demo Video
 
 [🎬 Watch Demo Video](https://drive.google.com/file/d/1XCrZ5nA45QeLU5IYLYpBp0IEzTQNwxDg/view?usp=sharing)
