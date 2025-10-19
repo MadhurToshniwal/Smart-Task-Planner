@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: smart-task-planner
+    env: node
+    region: singapore
+    plan: free
+    branch: railway-deployment
+    buildCommand: npm install && cd backend && npm install && cd ../frontend && npm install && npm run build && cd .. && node copy-frontend.js
+    startCommand: cd backend && node server.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: GROQ_API_KEY
+        sync: false
+      - key: MONGO_URI
+        sync: false
