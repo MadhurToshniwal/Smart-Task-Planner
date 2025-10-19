@@ -3,6 +3,10 @@ services:
     source:
       repo: MadhurToshniwal/Smart-Task-Planner
       rootDirectory: /
+    build:
+      command: npm run build
+    start:
+      command: npm start
     variables:
       NODE_ENV: production
       PORT: ${{ PORT }}

@@ -1,18 +1,18 @@
 [variables]
 NODE_ENV = "production"
 
+[providers]
+node = "18"
+
+[buildCmd]
+cmd = "npm run build"
+
+[startCmd] 
+cmd = "npm start"
+
 [phases.install]
-cmds = [
-  "cd backend && npm install",
-  "cd frontend && npm install"
-]
+cmds = ["npm install"]
 
 [phases.build] 
-cmds = [
-  "cd frontend && npm run build",
-  "mkdir -p backend/public",
-  "cp -r frontend/build/* backend/public/"
-]
-
-[start]
-cmd = "cd backend && node server.js"
+dependsOn = ["install"]
+cmds = ["npm run build"]
