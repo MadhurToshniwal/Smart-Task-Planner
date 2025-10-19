@@ -4,17 +4,17 @@ nixPkgs = ["nodejs_20", "npm"]
 [phases.install]
 dependsOn = ["setup"]
 cmds = [
-  "npm install",
   "cd backend && npm install",
-  "cd frontend && npm install"
+  "cd frontend && npm ci --include=dev"
 ]
 
 [phases.build]
 dependsOn = ["install"]
 cmds = [
   "cd frontend && npm run build",
-  "node copy-frontend.js"
+  "mkdir -p backend/public",
+  "cp -r frontend/build/* backend/public/"
 ]
 
 [start]
-cmd = "npm start"
+cmd = "cd backend && node server.js"
