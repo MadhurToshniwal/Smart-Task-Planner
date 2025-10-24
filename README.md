@@ -6,6 +6,9 @@
 [![MongoDB](https://img.shields.io/badge/MongoDB-Ready-brightgreen.svg)](https://mongodb.com/)
 [![AI Powered](https://img.shields.io/badge/AI-Groq%20Llama%203.1-orange.svg)](https://groq.com/)
 
+## Link to my google drive complete submission
+https://drive.google.com/drive/folders/12E4fbzMBND-iTEp3ue6Bgb3jk3yObScB?usp=drive_link
+
 > **Transform ambitious goals into actionable, time-bound tasks with the power of AI reasoning**
 ### Live Demo
 https://smart-task-planner-qntw.onrender.com/
