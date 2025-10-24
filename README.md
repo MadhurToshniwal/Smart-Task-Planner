@@ -11,7 +11,7 @@
 https://smart-task-planner-qntw.onrender.com/
 ## Demo Video
 
-[🎬 Watch Demo Video](https://drive.google.com/file/d/1XCrZ5nA45QeLU5IYLYpBp0IEzTQNwxDg/view?usp=sharing)
+[🎬 Watch Demo Video](https://drive.google.com/file/d/1ZmByu1I7yI2TXmPZDd9NYStb6-5WLbkG/view?usp=sharing)
 
 
 ## 🎯 **Project Overview**
